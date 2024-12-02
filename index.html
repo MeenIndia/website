@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en_IN">
 <head>
+	<!-- Links (start) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<!-- Links (end) -->
+	<!-- Meta tags (start) -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ledger Manager - Simplify Your Finances">
-    <title>Ledger Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="We at MeenTech develop app that simplify your daily life tasks."/>
+	<meta name="keywords" content=""/>
+	
+	<!-- Meta tags (end) -->
+    <title>MeenTech - Simple apps for your smartphone.</title>
     <style>
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 1;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        header .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,10 +47,12 @@
             background-color: #f4f4f4;
             color: #333;
             display: flex;
-            justify-content: center;
             align-items: center;
             height: 100vh;
         }
+		.main {
+			flex:1;
+		}
         .container {
             text-align: center;
             background: #fff;
@@ -51,9 +87,40 @@
         .download-btn:hover {
             background: #0056b3;
         }
+		footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            bottom: 0;
+            width: 1;
+        }
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+		.fa {
+			padding: 20px;
+			font-size: 30px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+		}
+		.fa:hover {
+			opacity: 0.7;
+		}
     </style>
 </head>
 <body>
+<div class="main">
+    <header>
+        <div class="logo">
+            <img src="/static/asset/logo.png" alt="Logo">
+        </div>
+    </header>
     <div class="container">
         <img src="/static/asset/ledger_manager_logo.png" alt="Cash Manager Logo" class="logo">
         <h1>Cash Manager</h1>
@@ -64,14 +131,22 @@
         <img src="/static/asset/tap_counter_logo.png" alt="Tap Counter Logo" class="logo">
         <h1>Tap Counter</h1>
         <p>Simple tap counter.</p>
-        <a class="download-btn" href="https://play.google.com/store/apps/details?id=meen.apps." target="_blank">Download on Google Play</a>
+        <a class="download-btn" href="https://play.google.com/store/apps/details?id=meen.apps.tapcounter" target="_blank">Download on Google Play</a>
     </div>
-	<footer style="margin-top: 20px; padding: 10px 0; background: #f8f9fa; color: #555; font-size: 0.9em; text-align: center; border-top: 1px solid #ddd;">
-            <p>&copy; 2024 MeenTech.</p>
-            <p>
-                <a href="/legal/policy.html" style="text-decoration: none; color: #007bff;">Privacy Policy</a> |
-                <a href="/support/index.html" style="text-decoration: none; color: #007bff;">Support</a>
-            </p>
+	<footer>
+        <div>
+            &copy; 2024 Finvenger. All rights reserved.
+        </div>
+        <div>
+            <a href="/support/index.html">Support</a>
+            <a href="/legal/policy.html">Privacy Policy</a>
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com"  class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"target="_blank"></a>
+            <a href="https://instagram.com" class="fa fa-youtube" target="_blank"></a>
+        </div>
     </footer>
+	</div>
 </body>
 </html>
