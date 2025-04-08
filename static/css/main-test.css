@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.site-name {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.window-controls span {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.hero-slider {
+  background: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.slider {
+  height: 200px;
+  background: #aaa;
+  margin-bottom: 1rem;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-controls button {
+  margin: 0 1rem;
+}
+
+.app-section {
+  padding: 2rem 1rem;
+}
+
+.app-card {
+  display: flex;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.app-logo {
+  width: 80px;
+  height: 80px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.app-info {
+  flex: 1;
+}
+
+.app-info button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+footer {
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+@media (max-width: 768px) {
+  .app-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-top: 0.5rem;
+  }
+}
